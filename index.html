@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionário de Triagem TEA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Questionário de Triagem para Autismo</h1>
+        <p>Responda as perguntas abaixo com 'Sim' ou 'Não'.</p>
+        <form id="quizForm">
+            <div class="question">
+                <label>P1: O bebê gosta de se balançar, pular ou girar brincando?</label>
+                <div>
+                    <input type="radio" name="P1" value="1"> Sim
+                    <input type="radio" name="P1" value="0"> Não
+                </div>
+            </div>
+            <div class="question">
+                <label>P2: O bebê aponta para mostrar interesse em algo?</label>
+                <div>
+                    <input type="radio" name="P2" value="1"> Sim
+                    <input type="radio" name="P2" value="0"> Não
+                </div>
+            </div>
+            <div class="question">
+                <label>P3: O bebê se interessa por outros bebês?</label>
+                <div>
+                    <input type="radio" name="P3" value="1"> Sim
+                    <input type="radio" name="P3" value="0"> Não
+                </div>
+            </div>
+            <div class="question">
+                <label>P4: O bebê troca sorrisos com outras pessoas?</label>
+                <div>
+                    <input type="radio" name="P4" value="1"> Sim
+                    <input type="radio" name="P4" value="0"> Não
+                </div>
+            </div>
+            <div class="question">
+                <label>P5: O bebê responde quando chamado pelo nome?</label>
+                <div>
+                    <input type="radio" name="P5" value="1"> Sim
+                    <input type="radio" name="P5" value="0"> Não
+                </div>
+            </div>
+            <div class="question">
+                <label>P6: O bebê mostra objetos para outras pessoas?</label>
+                <div>
+                    <input type="radio" name="P6" value="1"> Sim
+                    <input type="radio" name="P6" value="0"> Não
+                </div>
+            </div>
+            <div class="question">
+                <label>P7: O bebê gosta de brincar de faz de conta?</label>
+                <div>
+                    <input type="radio" name="P7" value="1"> Sim
+                    <input type="radio" name="P7" value="0"> Não
+                </div>
+            </div>
+            <div class="question">
+                <label>P8: O bebê se assusta com barulhos altos?</label>
+                <div>
+                    <input type="radio" name="P8" value="1"> Sim
+                    <input type="radio" name="P8" value="0"> Não
+                </div>
+            </div>
+            <div class="question">
+                <label>P9: O bebê reage quando alguém faz caretas para ele?</label>
+                <div>
+                    <input type="radio" name="P9" value="1"> Sim
+                    <input type="radio" name="P9" value="0"> Não
+                </div>
+            </div>
+            <div class="question">
+                <label>P10: O bebê faz gestos para pedir coisas?</label>
+                <div>
+                    <input type="radio" name="P10" value="1"> Sim
+                    <input type="radio" name="P10" value="0"> Não
+                </div>
+            </div>
+            <div class="question">
+                <label>P11: O bebê gosta de ser abraçado?</label>
+                <div>
+                    <input type="radio" name="P11" value="1"> Sim
+                    <input type="radio" name="P11" value="0"> Não
+                </div>
+            </div>
+            <div class="question">
+                <label>P12: O bebê evita contato visual?</label>
+                <div>
+                    <input type="radio" name="P12" value="1"> Sim
+                    <input type="radio" name="P12" value="0"> Não
+                </div>
+            </div>
+            <button type="button" onclick="calcularRisco()">Enviar</button>
+        </form>
+        <div id="resultado"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
