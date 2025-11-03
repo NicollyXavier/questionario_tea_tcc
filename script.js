@@ -45,7 +45,7 @@ async function calcularRisco() {
 
     // Enviar para o servidor Flask
     try {
-        const response = await fetch("http://127.0.0.1:5000/avaliar", {
+        const response = await fetch("https://mchat-backend-bg0s.onrender.com/avaliar", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ respostas })
@@ -64,3 +64,4 @@ async function calcularRisco() {
         document.getElementById('resultado').innerText = `⚠️ Erro ao conectar à IA. Mostrando cálculo local: ${resultadoLocal}`;
     }
 }
+
