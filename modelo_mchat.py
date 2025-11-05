@@ -26,6 +26,7 @@ modelo.fit(X_train, y_train)
 # 6. Fazer previsões e avaliar
 y_pred = modelo.predict(X_test)
 print("\n🔹 Relatório de desempenho do modelo:")
+print("Classes presentes no conjunto de teste:", sorted(y_test.unique()))
 print(classification_report(y_test, y_pred))
 
 # 7. Teste com exemplo novo
@@ -40,4 +41,5 @@ plt.show()
 
 # 9. Salvar o modelo treinado
 joblib.dump(modelo, "modelo_mchat.pkl")
+
 print("\n💾 Modelo salvo como modelo_mchat.pkl")
